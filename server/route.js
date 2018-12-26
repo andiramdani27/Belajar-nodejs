@@ -3,13 +3,13 @@ var fs = require('fs');
 var url = require('url');
 
 function renderFile(fileName, response) {
-    response.writeHead(200, {'Content-Type': 'text/html'});
     fs.readFile(fileName, (error, data) => {
         if (error) {
             response.writeHead(400);
             response.write('File Not Found');
         }else{
             // kirim respon
+            response.writeHead(200, {'Content-Type': 'text/html'});
             response.write(data);
         }   
         response.end();
