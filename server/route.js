@@ -29,6 +29,7 @@ module.exports = {
                 renderFile('./users.html', response);
                 break;
             default:
+                renderFile('./404.html', response);
                 break;
         }
     }
