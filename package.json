@@ -2,7 +2,7 @@
   "name": "belajar-npm",
   "version": "1.0.0",
   "description": "project untuk belajar npm",
-  "main": "hello-world.js",
+  "main": "basic/handle_multiple_request.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
